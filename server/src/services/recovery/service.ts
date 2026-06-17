@@ -2650,7 +2650,7 @@ export function recoveryService(db: Db, deps: { enqueueWakeup: RecoveryWakeup })
       .where(
         and(
           isNull(issues.assigneeUserId),
-          inArray(issues.status, ["todo", "in_progress"]),
+          inArray(issues.status, ["todo", "in_progress", "in_review"]),
           sql`${issues.assigneeAgentId} is not null`,
         ),
       );

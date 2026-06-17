@@ -13,7 +13,7 @@
   },
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./dist/index.js"
   },
   "publishConfig": {
     "access": "public",
@@ -94,5 +94,6 @@
     "typescript": "^5.7.3",
     "vite": "^6.1.0",
     "vitest": "^4.1.8"
-  }
+  },
+  "main": "./dist/index.js"
 }
